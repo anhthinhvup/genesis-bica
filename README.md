@@ -5,6 +5,7 @@
 ### Brain-Isomorphic Ultra-Sparse 1.58-Bit Cognitive Architecture (`457M` Total / `14.5M` Active)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24447312.svg)](https://doi.org/10.5281/zenodo.24447312)
+[![Live Demo](https://img.shields.io/badge/Live_CPU_Terminal-Try_Now_(0%25_GPU)-brightgreen.svg)](https://huggingface.co/spaces/phamvanthinhgin2004/genesis-demo)
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-genesis--v8--bica-FFD21E.svg)](https://huggingface.co/phamvanthinhgin2004/genesis-v8-bica)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Rust Engine](https://img.shields.io/badge/Rust_AVX2-Zero_Crates_Zero_Alloc-orange.svg)](./engine_rust)
