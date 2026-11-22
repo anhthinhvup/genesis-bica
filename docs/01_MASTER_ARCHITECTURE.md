@@ -4,7 +4,7 @@
 > **Trạng thái**: Đã kiểm chứng hai vòng độc lập (`DeepInvestigator` Round 1 Tổng hợp + Round 2 Phản biện Pháp y & Đo thực tế trên phần cứng thật)  
 > **Phần cứng kiểm chứng trực tiếp**: Laptop `Intel Core i5-10210U` (`4C/8T`, `15W`, `6 MB L3`, `16 GB DDR4` [trống `3.57–3.62 GB`], RAM BW `25.01 GB/s`, AVX2 SGEMM `206.9 GFLOP/s`, ổ NVMe `E:\` trống `242.35 GB`, uncached 4KB random read `0.1781 ms = 5,614 IOPS`)  
 > **Checkpoint thực đo**: [`v7_ultra_p1_preview.bin`](../models/genesis_chat_3m/v6_lm/v7_ultra_p1_preview.bin) (`982.72 MB`, `GV6MOD03`, `445.96M` tổng tham số, `10.31M` active tại `R=1`) & [`v7_500m_model_best.bin`](../models/genesis_chat_3m/v6_lm/v7_500m_model_best.bin) (`54.25M`).  
-> **An toàn ổ `C:\`**: `0 B` ghi lên ổ `C:\`; toàn bộ kho, chỉ mục, delta-sidecar và cache lưu trên `E:\learn\project_genesis\`.
+> **An toàn ổ `C:\`**: `0 B` ghi lên ổ `C:\`; toàn bộ kho, chỉ mục, delta-sidecar và cache lưu trên `<WORKSPACE>\`.
 
 ---
 

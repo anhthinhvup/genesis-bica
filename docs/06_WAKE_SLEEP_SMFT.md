@@ -21,7 +21,7 @@ Báo cáo Round 1 từng tồn tại 3 mâu thuẫn kỹ thuật nghiêm trọng
 
 ### 2.1. Trụ cột 1 — Tệp Phụ Thưa `f32` (`sleep_peer_delta.bin < 20 MB` trên `E:\`)
 Xóa hoàn toàn mâu thuẫn với `#87` (`GV8MOD01` giữ nguyên trạng thái chỉ đọc `404.7 MiB` nén `Q8` trong RAM!):
-- Chỉ lưu một tệp phụ thưa nhỏ trên ổ `E:\` (`E:\learn\project_genesis\.cache_e\sleep_peer_delta.bin`, kích thước **`< 20 MB`**) gồm:
+- Chỉ lưu một tệp phụ thưa nhỏ trên ổ `E:\` (`<WORKSPACE>\.cache_e\sleep_peer_delta.bin`, kích thước **`< 20 MB`**) gồm:
   - Danh sách chỉ số hàng chuyên gia `PEER` đang học (`active_expert_ids`, tối đa `1–5%` trong `262,144` chuyên gia = `2,600–13,000` hàng).
   - Bản sao độ chính xác cao **`delta_u[e], delta_v[e] ∈ f32[384]`** + trạng thái `Adafactor` cục bộ (`vu_local[e], vv_local[e]`) CHỈ cho các hàng này!
 - Lúc chạy bình thường (Wake), `GV8MOD01` cộng trực tiếp `delta` cho các hàng nằm trong bảng băm nhỏ (hoặc hợp nhất lại thành hàng `Q8` mới sau khi vượt qua cổng Zero-Tradeoff). Trọng số lõi `BitNet` và `Attention` giữ **đóng băng 100%** khi ngủ trên CPU!
@@ -48,7 +48,7 @@ Khi `HomeostaticInteroceptor` (`#90`) xác nhận điều kiện an toàn (**C�
      - `MC-8` & tập kiểm chứng cũ: không rớt bất kỳ câu nào đã đúng.
      - `Parity-500` & `Adversarial-312` (đối với lớp tích hợp): **`FakeVerify == 0`**.
    - **Nếu ĐẠT 100% cổng**: Ghi nguyên tử (`atomic rename`) `sleep_peer_delta.bin` và (tùy chọn) tái đóng gói hàng `Q8` cập nhật vào bản sao `GV8MOD01` mới.
-   - **Nếu VI PHẠM BẤT KỲ ĐIỀU KIỆN NÀO**: Tự động hoàn nguyên (`rollback`) về `sleep_peer_delta.bin.bak` và ghi nhật ký nguyên nhân vào `E:\learn\project_genesis\.cache_e\sleep_audit.jsonl`.
+   - **Nếu VI PHẠM BẤT KỲ ĐIỀU KIỆN NÀO**: Tự động hoàn nguyên (`rollback`) về `sleep_peer_delta.bin.bak` và ghi nhật ký nguyên nhân vào `<WORKSPACE>\.cache_e\sleep_audit.jsonl`.
 
 ---
 

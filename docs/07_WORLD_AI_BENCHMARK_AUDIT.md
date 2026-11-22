@@ -3,7 +3,7 @@
 **Date**: 2026-11-20  
 **Target Under Test**: Unmodified `Project Genesis` (`GenesisChat3MEngine`, Loop 12A / `#256`), running **zero-shot on CPU** (`0%` neural networks, `0%` GPU, `0%` external LLM APIs, `0%` benchmark-specific tuning or hardcoding).  
 **Harness**: [`tools/world_bench/run_world_bench.py`](../tools/world_bench/run_world_bench.py), [`scorers_math_logic.py`](../tools/world_bench/scorers_math_logic.py), [`scorers_code.py`](../tools/world_bench/scorers_code.py).  
-**Datasets**: Official public HuggingFace test/validation splits stored on `E:\learn\project_genesis\.cache_e\world_benchmarks\` (`0 B` on `C:\`), SHA-256 locked.
+**Datasets**: Official public HuggingFace test/validation splits stored on `<WORKSPACE>\.cache_e\world_benchmarks\` (`0 B` on `C:\`), SHA-256 locked.
 
 ---
 

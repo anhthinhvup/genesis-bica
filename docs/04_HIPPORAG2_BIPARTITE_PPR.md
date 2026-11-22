@@ -7,7 +7,7 @@
 
 ## 1. Phân tích Nút thắt & Bằng chứng Thực nghiệm trên `knowledge_vault.sqlite` (`C8`)
 
-Kho tri thức cục bộ `E:\learn\project_genesis\.cache_e\knowledge_vault.sqlite` hiện chứa **`265,500` tài liệu** (`150,000` bài Wikipedia Tiếng Việt + `115,500` mảnh `datasets_15gb`, `454.1 MB` trên đĩa `E:\`). Kiểm toán thực tế trên `i5-10210U` cho thấy 3 vấn đề gốc cần giải quyết:
+Kho tri thức cục bộ `<WORKSPACE>\.cache_e\knowledge_vault.sqlite` hiện chứa **`265,500` tài liệu** (`150,000` bài Wikipedia Tiếng Việt + `115,500` mảnh `datasets_15gb`, `454.1 MB` trên đĩa `E:\`). Kiểm toán thực tế trên `i5-10210U` cho thấy 3 vấn đề gốc cần giải quyết:
 
 1. **BM25 phẳng không giải được câu hỏi bắc cầu 2–3 bước (Multi-Hop)**: Nếu câu hỏi chứa thực thể $A$ và câu trả lời nằm ở đoạn chứa thực thể $C$ (nối qua cầu $B$), FTS5 BM25 hoàn toàn không khớp từ vựng ở đoạn $C$.
 2. **PPR 1-mầm ngây thơ trượt khỏi cửa sổ `<CTX>`**:
@@ -23,7 +23,7 @@ Kho tri thức cục bộ `E:\learn\project_genesis\.cache_e\knowledge_vault.sql
 ### 2.1. Dựng Chỉ mục Đồ thị Hai phía `Passage ↔ Phrase` Hoàn toàn Trên CPU (`~19.3 giây` cho `265,500` tài liệu!)
 Thay vì gọi LLM OpenIE, tận dụng cấu trúc tiêu đề, cụm danh từ viết hoa (Proper Noun Spans), cụm kỹ thuật và chỉ mục `concept_wsd.sqlite` sẵn có của `Genesis`:
 - **Chứng minh thực nghiệm trên chính `knowledge_vault.sqlite` (`i5-10210U`)**: Bộ trích xuất cụm thực thể + tiêu đề thuần Python đạt tốc độ **`13,742 docs/s`** (`13.3` thực thể/tài liệu) → **đánh chỉ mục trọn bộ `265,500` tài liệu chỉ mất `~19.3 giây`** offline trên laptop!
-- **Bố cục Lưu trữ Nén CSR trên ổ `E:\`** (`E:\learn\project_genesis\.cache_e\hipporag2_bipartite.bin`, `< 75 MB` RAM khi `mmap`/nạp):
+- **Bố cục Lưu trữ Nén CSR trên ổ `E:\`** (`<WORKSPACE>\.cache_e\hipporag2_bipartite.bin`, `< 75 MB` RAM khi `mmap`/nạp):
   - **Tập nút đoạn văn** $V_P$ (`265,500` nút trỏ trực tiếp `doc_id` trong `knowledge_vault.sqlite`).
   - **Tập nút cụm thực thể / khái niệm** $V_E$ (lọc bỏ từ dừng và nút có bậc cực đại `df > 5,000`).
   - **Cạnh 2 phía có trọng số đặc hiệu**: Cạnh $(p, e)$ mang trọng số $w(p, e) = \text{tf}(e, p) \cdot \text{idf}(e)$, cộng thêm cạnh đồng nghĩa/khái niệm cục bộ từ `concept_wsd.sqlite` (WordNet / ViWN / Wikidata5M).

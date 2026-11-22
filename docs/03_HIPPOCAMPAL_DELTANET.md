@@ -34,7 +34,7 @@ Hợp nhất 3 thành phần đã có nền tảng vững trong `Project Genesis
    $$\hat{k}_t = \frac{k_t - \bar{\mu}}{\|k_t - \bar{\mu}\|_2 + \epsilon}$$
    triệt tiêu thành phần nón dị hướng `mean_cos = 0.1785 → ~0.0`.
 2. **Bộ nhớ Khe Hiện tường (`Kanerva SDM` + `Modern Hopfield` nhiệt độ cao $\beta$)**:
-   - Lưu danh sách khe có thời hạn & trọng số độ bất ngờ $\{( \hat{k}_i, v_i^{\text{text}}, s_i, t_i, \text{status}_i )\}_{i=1}^{M}$ ($M \le 4{,}096$ khe nóng trong RAM $\approx 6\text{ MB}$, lưu bền vững xuống SQLite/binary trên `E:\learn\project_genesis\.cache_e\episodic_slots.db`).
+   - Lưu danh sách khe có thời hạn & trọng số độ bất ngờ $\{( \hat{k}_i, v_i^{\text{text}}, s_i, t_i, \text{status}_i )\}_{i=1}^{M}$ ($M \le 4{,}096$ khe nóng trong RAM $\approx 6\text{ MB}$, lưu bền vững xuống SQLite/binary trên `<WORKSPACE>\.cache_e\episodic_slots.db`).
    - Truy hồi theo mật độ Hopfield:
      $$p_i(q) = \frac{\exp(\beta \, \hat{q}^\top \hat{k}_i)}{\sum_{j \in \text{ACTIVE}} \exp(\beta \, \hat{q}^\top \hat{k}_j)}$$
      Đạt **`cos = 1.0000` trong `5.5 µs/truy vấn`** trên CPU!
