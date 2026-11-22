@@ -5,8 +5,8 @@
 ### Brain-Isomorphic Ultra-Sparse 1.58-Bit Cognitive Architecture (`457M` Total / `14.5M` Active)
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
-[![CI](https://github.com/anhthinhvup/genesis-bica/actions/workflows/ci.yml/badge.svg)](https://github.com/anhthinhvup/genesis-bica/actions/workflows/ci.yml)
 [![Rust Engine](https://img.shields.io/badge/Rust_AVX2-Zero_Crates_Zero_Alloc-orange.svg)](./engine_rust)
+[![Tests](https://img.shields.io/badge/Unit_Tests-Cargo_%2B_Pytest_Verified-brightgreen.svg)](./tests)
 [![CPU Speed](https://img.shields.io/badge/i5--10210U_15W_CPU-565%E2%80%932,156_tok%2Fs-brightgreen.svg)](#headline-benchmarks)
 [![B200 Training](https://img.shields.io/badge/NVIDIA_B200-954k_tok%2Fs_($1.82%2F1B)-purple.svg)](#hardware-efficiency)
 
