@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440" font-family="Helvetica, Arial, sans-serif">
+  <rect width="960" height="440" fill="#ffffff"/>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#1e293b"/>
+    </marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#1d4ed8"/>
+    </marker>
+    <marker id="arrT" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#0f766e"/>
+    </marker>
+  </defs>
+
+  <!-- Input -->
+  <rect x="18" y="24" width="142" height="72" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+  <text x="89" y="48" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">User Query x</text>
+  <text x="89" y="65" text-anchor="middle" font-size="10" fill="#475569">Bilingual EN/VI</text>
+  <text x="89" y="80" text-anchor="middle" font-size="10" fill="#475569">Context &amp; Session</text>
+
+  <!-- Global Workspace -->
+  <rect x="200" y="18" width="740" height="84" rx="5" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="214" y="37" font-size="10" font-weight="700" fill="#92400e">SUBSYSTEM #90 · PREFRONTAL GLOBAL WORKSPACE &amp; INTEROCEPTION</text>
+  <text x="214" y="57" font-size="12.5" font-weight="700" fill="#0f172a">Active Inference EFE Arbitrator  G(pi) = Epistemic + Pragmatic</text>
+  <text x="214" y="75" font-size="10.5" fill="#334155">Neuromodulators (DA, NE, ACh, 5-HT) from host CPU/RAM/disk · ACh gating blocks noisy &lt;CTX&gt; when c_epi &gt;= 0.75</text>
+  <text x="214" y="91" font-size="10" font-family="Consolas, monospace" fill="#92400e">Abstention F1 = 0.9615  |  Answer Rate = 92.0%  |  Latency = 0.080 ms</text>
+
+  <!-- Left column: CA3 + HippoRAG-2 -->
+  <rect x="18" y="136" width="248" height="96" rx="5" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="30" y="155" font-size="9.5" font-weight="700" fill="#1e40af">SUBSYSTEM #88 · HIPPOCAMPAL CA3</text>
+  <text x="30" y="173" font-size="12" font-weight="700" fill="#0f172a">Fast Episodic Memory + ATMS</text>
+  <text x="30" y="190" font-size="10" fill="#334155">CountSketch + L2 Whitening (cos: 0.22 -&gt; 0.0)</text>
+  <text x="30" y="205" font-size="10" fill="#334155">Non-monotonic 1-shot belief superseding</text>
+  <text x="30" y="222" font-size="9.5" font-family="Consolas, monospace" fill="#1e40af">50/50 (100%) 1-Shot | 0.37 ms | 8.8 MB</text>
+
+  <rect x="18" y="248" width="248" height="96" rx="5" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="30" y="267" font-size="9.5" font-weight="700" fill="#5b21b6">SUBSYSTEM #89 · ASSOCIATIVE GRAPH</text>
+  <text x="30" y="285" font-size="12" font-weight="700" fill="#0f172a">HippoRAG-2 Bipartite PPR</text>
+  <text x="30" y="302" font-size="10" fill="#334155">265,500 docs -&gt; 40.3 MiB CSR (zero regex)</text>
+  <text x="30" y="317" font-size="10" fill="#334155">Dual-seed hub-suppressed PPR (1/deg^0.75)</text>
+  <text x="30" y="334" font-size="9.5" font-family="Consolas, monospace" fill="#5b21b6">+61.7 pp vs BM25 (2-Hop) | 4.74 ms</text>
+
+  <!-- Right Main Container: Neural Core -->
+  <rect x="302" y="136" width="638" height="208" rx="6" fill="#f0fdf4" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="316" y="156" font-size="10" font-weight="700" fill="#115e59">SUBSYSTEM #87 · GENESIS-v8 NATIVE BICA NEURAL CORE (PURE-RUST AVX2+FMA .gv8 RUNTIME)</text>
+  <text x="316" y="172" font-size="10" font-family="Consolas, monospace" fill="#0f766e">457.07M Total / 14.5M Active (3.17%)  |  408.7 MiB Disk  |  424.7 MiB RSS  |  0 Heap Allocs/tok</text>
+
+  <!-- 4 Pipeline Stages inside Core -->
+  <rect x="316" y="186" width="132" height="142" rx="4" fill="#ffffff" stroke="#334155" stroke-width="1.2"/>
+  <text x="382" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a">1. Engram O(1)</text>
+  <text x="382" y="221" text-anchor="middle" font-size="9.5" fill="#475569">Lexical Reflex</text>
+  <line x1="326" y1="230" x2="438" y2="230" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="325" y="247" font-size="9.5" fill="#334155">- 2-head N-gram</text>
+  <text x="325" y="262" font-size="9.5" fill="#334155">- 65,536 x 64-D</text>
+  <text x="325" y="277" font-size="9.5" fill="#334155">- 8.44M total</text>
+  <text x="325" y="292" font-size="9.5" fill="#334155">- 2 lookups/tok</text>
+  <text x="382" y="317" text-anchor="middle" font-size="9" font-family="Consolas, monospace" fill="#0f766e">f16 table</text>
+
+  <rect x="468" y="186" width="144" height="142" rx="4" fill="#ffffff" stroke="#0f766e" stroke-width="1.3"/>
+  <text x="540" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a">2. Gated DeltaNet</text>
+  <text x="540" y="221" text-anchor="middle" font-size="9.5" fill="#475569">6 Layers + Top-2 MoE</text>
+  <line x1="478" y1="230" x2="602" y2="230" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="477" y="247" font-size="9.5" fill="#334155">- Chunkwise WY (C=64)</text>
+  <text x="477" y="262" font-size="9.5" fill="#334155">- O(1) recurrent state</text>
+  <text x="477" y="277" font-size="9.5" fill="#334155">- 16 experts, Top-2</text>
+  <text x="477" y="292" font-size="9.5" fill="#334155">- BitNet b1.58 STE</text>
+  <text x="540" y="317" text-anchor="middle" font-size="9" font-family="Consolas, monospace" fill="#0f766e">err = 5.99e-4</text>
+
+  <rect x="632" y="186" width="144" height="142" rx="4" fill="#ffffff" stroke="#b45309" stroke-width="1.3"/>
+  <text x="704" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a">3. Huginn Core</text>
+  <text x="704" y="221" text-anchor="middle" font-size="9.5" fill="#475569">Shared-KV, R in {1..4}</text>
+  <line x1="642" y1="230" x2="766" y2="230" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="641" y="247" font-size="9.5" fill="#334155">- 2 shared attn layers</text>
+  <text x="641" y="262" font-size="9.5" fill="#334155">- Window W = 1,024</text>
+  <text x="641" y="277" font-size="9.5" fill="#334155">- BitNet 2-bit blk-32</text>
+  <text x="641" y="292" font-size="9.5" fill="#334155">- 4-branch Rust tree</text>
+  <text x="704" y="317" text-anchor="middle" font-size="9" font-family="Consolas, monospace" fill="#92400e">val_R2 &lt; val_R1</text>
+
+  <rect x="796" y="186" width="132" height="142" rx="4" fill="#ffffff" stroke="#be185d" stroke-width="1.3"/>
+  <text x="862" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a">4. 2x262K PEER</text>
+  <text x="862" y="221" text-anchor="middle" font-size="9.5" fill="#475569">Semantic Long-Term</text>
+  <line x1="806" y1="230" x2="918" y2="230" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="805" y="247" font-size="9.5" fill="#334155">- 524,288 experts</text>
+  <text x="805" y="262" font-size="9.5" fill="#334155">- O(sqrt N) PK lookup</text>
+  <text x="805" y="277" font-size="9.5" fill="#334155">- Q8 per-row quant</text>
+  <text x="805" y="292" font-size="9.5" fill="#334155">- Live f32 delta</text>
+  <text x="862" y="317" text-anchor="middle" font-size="9" font-family="Consolas, monospace" fill="#9d174d">99.80% Top-1</text>
+
+  <!-- Recurrent loop arrow on Huginn -->
+  <path d="M 738 186 C 738 174, 670 174, 670 186" fill="none" stroke="#b45309" stroke-width="1.3" marker-end="url(#arr)"/>
+
+  <!-- Bottom Wake-Sleep Consolidation Bar -->
+  <rect x="18" y="370" width="922" height="56" rx="5" fill="#fdf2f8" stroke="#be185d" stroke-width="1.4"/>
+  <text x="32" y="391" font-size="10" font-weight="700" fill="#9d174d">SUBSYSTEM #91 · OFFLINE WAKE-SLEEP CONSOLIDATION (SMFT + PEER DELTA SIDECAR)</text>
+  <text x="32" y="411" font-size="10.5" fill="#334155">Replay CA3 Episodes -&gt; Background-DF Hard Gating (peer_bg_df.bin) -&gt; Hot-Load f32 Delta (5.64 MiB)  |  0/200 Leakage · 99%/100% Retention · 100% Poison Rollback</text>
+
+  <!-- Connectors -->
+  <line x1="160" y1="60" x2="195" y2="60" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- GW <-> CA3 -->
+  <path d="M 270 102 L 270 119 L 142 119 L 142 132" fill="none" stroke="#1d4ed8" stroke-width="1.4" marker-end="url(#arrB)"/>
+  <!-- GW <-> Core -->
+  <line x1="620" y1="102" x2="620" y2="132" stroke="#0f766e" stroke-width="1.6" marker-end="url(#arrT)"/>
+  <line x1="602" y1="136" x2="602" y2="106" stroke="#1e293b" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <!-- CA3 & Hippo -> Core -->
+  <line x1="266" y1="184" x2="298" y2="184" stroke="#1d4ed8" stroke-width="1.4" marker-end="url(#arrB)"/>
+  <line x1="266" y1="296" x2="298" y2="296" stroke="#6d28d9" stroke-width="1.4" marker-end="url(#arr)"/>
+  <!-- Stage arrows -->
+  <line x1="448" y1="257" x2="464" y2="257" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arrT)"/>
+  <line x1="612" y1="257" x2="628" y2="257" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arrT)"/>
+  <line x1="776" y1="257" x2="792" y2="257" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arrT)"/>
+  <!-- Sleep cycle arrows -->
+  <line x1="142" y1="344" x2="142" y2="366" stroke="#be185d" stroke-width="1.4" marker-end="url(#arr)"/>
+  <line x1="862" y1="370" x2="862" y2="348" stroke="#be185d" stroke-width="1.5" marker-end="url(#arr)"/>
+</svg>

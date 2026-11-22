@@ -10,7 +10,7 @@
 [![CPU Speed](https://img.shields.io/badge/i5--10210U_15W_CPU-565%E2%80%932,156_tok%2Fs-brightgreen.svg)](#headline-benchmarks)
 [![B200 Training](https://img.shields.io/badge/NVIDIA_B200-954k_tok%2Fs_($1.82%2F1B)-purple.svg)](#hardware-efficiency)
 
-[**Preprint PDF (5p, 2-Col)**](./paper/genesis_v8_bica_preprint.pdf) · [**LaTeX Source**](./paper/genesis_v8_bica.tex) · [**Technical Report**](./TECHNICAL_REPORT.md) · [**Google TRC Proposal**](./TRC_RESEARCH_PROPOSAL.md) · [**Companion Specs (01–07)**](./docs/README.md) · [**SHA-256 Benchmarks**](./benchmarks/README.md)
+[**Preprint PDF (8p, 2-Col)**](./paper/genesis_v8_bica_preprint.pdf) · [**LaTeX Source**](./paper/genesis_v8_bica.tex) · [**Technical Report**](./TECHNICAL_REPORT.md) · [**Google TRC Proposal**](./TRC_RESEARCH_PROPOSAL.md) · [**Companion Specs (01–07)**](./docs/README.md) · [**SHA-256 Benchmarks**](./benchmarks/README.md)
 
 </div>
 
