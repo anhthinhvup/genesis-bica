@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# Rust
+target/
+Cargo.lock
+
+# Weights, datasets & large binary artifacts (host on HuggingFace / Releases)
+*.pt
+*.pth
+*.bin
+*.gv6
+*.gv8
+*.gguf
+*.safetensors
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.parquet
+*.jsonl
+
+# Local secrets & OS artifacts
+.env
+*.toml.local
+.DS_Store
+Thumbs.db

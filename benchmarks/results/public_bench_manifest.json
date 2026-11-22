@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "total_items": 120,
+  "counts_by_suite": {
+    "B1_MBPP_40": 40,
+    "B2_GSM8K_40": 40,
+    "B3_TruthfulQA_ViQA_40": 40
+  },
+  "files_sha256": {
+    "gsm8k_test.parquet": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+    "mbpp_sanitized_test.parquet": "e9e9efa2c0d59ef5e55537a9d126b8f875d5ac010a8d75628d76824884e15850",
+    "truthfulqa_mc_val.parquet": "23f08e230ca4ed66babf3a72419af7cbde1f3d734dd396ac4cf6d088bd162afd",
+    "uit_viquad2_val.parquet": "8c81bdd75bd39eeff98df769f2282453397fa8c7004085e4fe3fc6e419733ae0"
+  }
+}

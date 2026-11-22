@@ -1,0 +1,39 @@
+name: Genesis-BICA CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  rust-engine:
+    name: Rust Zero-Crate AVX2 Engine
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Build release binary & cdylib (zero external crates)
+        working-directory: engine_rust
+        run: cargo build --release
+      - name: Run Rust unit tests
+        working-directory: engine_rust
+        run: cargo test --release
+
+  python-bica-and-deltanet:
+    name: Python BICA Subsystems & Chunkwise WY DeltaNet Proofs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install minimal CPU test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy pytest psutil
+          pip install --index-url https://download.pytorch.org/whl/cpu torch
+      - name: Run BICA & DeltaNet mathematical verification suite
+        env:
+          PYTHONPATH: "."
+        run: pytest -v tests/

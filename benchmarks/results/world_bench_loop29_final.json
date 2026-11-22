@@ -1,0 +1,163 @@
+{
+  "load_sec": 47.8,
+  "limit": 100,
+  "suites": {
+    "humaneval": {
+      "suite": "HumanEval",
+      "n": 100,
+      "pass_at_1": 39,
+      "acc": 0.39,
+      "non_empty_code": 83,
+      "syntax_valid": 83,
+      "fake_verify": 1,
+      "crashes": 0,
+      "crash_samples": [],
+      "median_ms": 494.92,
+      "dataset_total": 164,
+      "dataset_sha256": "9329d3a61b18b326",
+      "elapsed_sec": 158.81
+    },
+    "mbpp": {
+      "suite": "MBPP-sanitized",
+      "n": 100,
+      "pass_at_1": 39,
+      "acc": 0.39,
+      "non_empty_code": 92,
+      "syntax_valid": 92,
+      "fake_verify": 0,
+      "crashes": 0,
+      "crash_samples": [],
+      "median_ms": 1536.49,
+      "dataset_total": 257,
+      "dataset_sha256": "7f47e0d8a7e5011d",
+      "elapsed_sec": 200.9
+    },
+    "gsm8k": {
+      "suite": "GSM8K",
+      "n": 100,
+      "correct": 34,
+      "acc": 0.34,
+      "abstain": 2,
+      "fake_verify": 1,
+      "crashes": 0,
+      "median_ms": 228.19,
+      "samples": [
+        {
+          "q": "Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes mu",
+          "gold": 18.0,
+          "pred_tail": [
+            18.0
+          ],
+          "reply": "18",
+          "hit": true,
+          "abs": false,
+          "ms": 19798.9
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in tota",
+          "gold": 3.0,
+          "pred_tail": [
+            3.0
+          ],
+          "reply": "3",
+          "hit": true,
+          "abs": false,
+          "ms": 118.2
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,00",
+          "gold": 70000.0,
+          "pred_tail": [
+            70000.0
+          ],
+          "reply": "70000",
+          "hit": true,
+          "abs": false,
+          "ms": 335.6
+        },
+        {
+          "q": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many t",
+          "gold": 540.0,
+          "pred_tail": [
+            540.0
+          ],
+          "reply": "540",
+          "hit": true,
+          "abs": false,
+          "ms": 601.3
+        },
+        {
+          "q": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing s",
+          "gold": 20.0,
+          "pred_tail": [
+            20.0
+          ],
+          "reply": "20",
+          "hit": true,
+          "abs": false,
+          "ms": 388.6
+        }
+      ],
+      "dataset_total": 1319,
+      "dataset_sha256": "ca6e7c5108b7ab7b",
+      "elapsed_sec": 114.09
+    },
+    "math500": {
+      "suite": "MATH-500",
+      "n": 100,
+      "correct": 41,
+      "acc": 0.41,
+      "abstain": 11,
+      "fake_verify": 6,
+      "crashes": 0,
+      "median_ms": 83.87,
+      "dataset_total": 500,
+      "dataset_sha256": "55e02317c57e6c22",
+      "elapsed_sec": 53.24
+    },
+    "arc_challenge": {
+      "suite": "ARC-Challenge",
+      "n": 100,
+      "correct": 42,
+      "acc": 0.42,
+      "chance": 0.25,
+      "answered": 100,
+      "abstain": 0,
+      "fake_verify": 0,
+      "crashes": 0,
+      "median_ms": 3868.26,
+      "dataset_total": 1172,
+      "dataset_sha256": "b90e27562e002b98",
+      "elapsed_sec": 680.97
+    },
+    "mmlu_pro": {
+      "suite": "MMLU-Pro",
+      "n": 100,
+      "correct": 25,
+      "acc": 0.25,
+      "chance": 0.1,
+      "answered": 97,
+      "abstain": 1,
+      "fake_verify": 1,
+      "crashes": 0,
+      "median_ms": 5847.31,
+      "dataset_total": 12032,
+      "dataset_sha256": "51d7b60cb50f027a",
+      "elapsed_sec": 909.62
+    },
+    "folio": {
+      "suite": "FOLIO",
+      "n": 100,
+      "correct": 63,
+      "acc": 0.63,
+      "chance": 0.3333,
+      "uncertain_via_abstain": 33,
+      "fake_verify": 2,
+      "crashes": 0,
+      "median_ms": 174.56,
+      "dataset_total": 203,
+      "dataset_sha256": "6b1df66ccc811fe7",
+      "elapsed_sec": 116.89
+    }
+  }
+}

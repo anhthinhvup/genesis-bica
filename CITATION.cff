@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "Genesis-v8 Native BICA: A Brain-Isomorphic Ultra-Sparse 1.58-Bit Cognitive Architecture for High-Throughput CPU Inference and TPU/B200 Scaling"
+message: "If you use Genesis-v8 Native BICA, its Rust AVX2 .gv8 engine, or benchmark harnesses in your research, please cite this work."
+type: software
+authors:
+  - family-names: "Pham"
+    given-names: "Van Thinh"
+    alias: "anhthinhvup"
+    affiliation: "Independent AI Systems Researcher, Vietnam"
+repository-code: "https://github.com/anhthinhvup/genesis-bica"
+url: "https://github.com/anhthinhvup/genesis-bica"
+license: Apache-2.0
+version: "0.8.0"
+date-released: "2026-11-22"
+keywords:
+  - "brain-isomorphic-ai"
+  - "bitnet-1.58"
+  - "gated-deltanet"
+  - "peer-sparse-memory"
+  - "recurrent-depth"
+  - "hipporag"
+  - "active-inference"
+  - "continual-learning"
+  - "cpu-inference"
+  - "rust-avx2"

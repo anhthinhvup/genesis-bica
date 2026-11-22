@@ -1,0 +1,300 @@
+{
+  "hardware": "Intel Core i5-10210U (4C/8T, 15W, 16GB RAM, 0% GPU)",
+  "models": [
+    {
+      "name": "Genesis-v8 BICA v2 (445.96M / 10.31M active)",
+      "speed": {
+        "file_mib": 408.7,
+        "cold_load_ms": 1098.2,
+        "tg64_r1_tok_s": 565.4,
+        "tg64_r2_tok_s": 427.4,
+        "parallel_4branch_eff_tok_s": 2156.5
+      },
+      "math_acc": "10/10",
+      "math_pct": 100.0,
+      "math_avg_ms": 8.16,
+      "ood_abstain": "14/15",
+      "ood_pct": 93.3,
+      "ood_avg_ms": 220.84,
+      "belief_1shot_cross_session": "10/10",
+      "belief_pct": 100.0,
+      "belief_avg_ms": 56.86,
+      "math_samples": [
+        {
+          "id": "M1",
+          "ok": true,
+          "ms": 0.43,
+          "route": "LEFT:AST_ARITH",
+          "ans": "172781"
+        },
+        {
+          "id": "M2",
+          "ok": true,
+          "ms": 0.41,
+          "route": "LEFT:AST_ARITH",
+          "ans": "51519"
+        },
+        {
+          "id": "M3",
+          "ok": true,
+          "ms": 0.29,
+          "route": "LEFT:AST_ARITH",
+          "ans": "5072"
+        },
+        {
+          "id": "M4",
+          "ok": true,
+          "ms": 0.3,
+          "route": "LEFT:AST_ARITH",
+          "ans": "2823"
+        }
+      ],
+      "ood_samples": [
+        {
+          "id": "O1",
+          "abstained": true,
+          "ms": 201.6,
+          "cov": 0.0,
+          "ans": "[ABSTAIN:OOD_LOW_EVIDENCE] c_vault=0.00 c_sheaf=0.38 h_sem=NA"
+        },
+        {
+          "id": "O2",
+          "abstained": true,
+          "ms": 96.44,
+          "cov": 0.0,
+          "ans": "[ABSTAIN:OOD_LOW_EVIDENCE] c_vault=0.00 c_sheaf=0.36 h_sem=NA"
+        },
+        {
+          "id": "O3",
+          "abstained": true,
+          "ms": 186.25,
+          "cov": 0.0,
+          "ans": "[ABSTAIN:OOD_LOW_EVIDENCE] c_vault=0.00 c_sheaf=0.55 h_sem=NA"
+        },
+        {
+          "id": "O4",
+          "abstained": false,
+          "ms": 623.27,
+          "cov": 0.45,
+          "ans": "Tổng thống Mỹ"
+        }
+      ]
+    },
+    {
+      "name": "Qwen2.5-0.5B-Instruct",
+      "speed": {
+        "file_mib": 468.64,
+        "pp64_tok_s": 124.84,
+        "tg64_tok_s": 46.42
+      },
+      "math_acc": "0/10",
+      "math_pct": 0.0,
+      "math_avg_ms": 3727.8,
+      "ood_abstain": "5/15",
+      "ood_pct": 33.3,
+      "ood_avg_ms": 1022.9,
+      "belief_1shot_cross_session": "0/10",
+      "belief_pct": 0.0,
+      "math_samples": [
+        {
+          "id": "M1",
+          "ok": false,
+          "ms": 4496.4,
+          "target": "172781",
+          "ans": "Để tính giá trị chính xác của (1847 + 2953) * 37 - 4819, chúng ta sẽ thực hiện các bước sau:  1) First, we need to calculate the sum inside the parentheses:    1847 + 2953 = 4800  "
+        },
+        {
+          "id": "M2",
+          "ok": false,
+          "ms": 4153.8,
+          "target": "51519",
+          "ans": "Để tính giá trị chính xác của (912 - 347) * 89 + 1234, chúng ta sẽ thực hiện các bước sau:  1) First, perform the subtraction inside the parentheses:    912 - 347 = 565  2) Next, m"
+        },
+        {
+          "id": "M3",
+          "ok": false,
+          "ms": 3953.4,
+          "target": "5072",
+          "ans": "Để tính giá trị chính xác của 73 * 64 + 19 * 48 - 512, chúng ta cần thực hiện phép tính theo cách sau:  1) Đầu tiên, chúng ta thực hiện phép tính của 73 * 64:    73 * 64 = 4752  2)"
+        },
+        {
+          "id": "M4",
+          "ok": false,
+          "ms": 2475.6,
+          "target": "2823",
+          "ans": "Để tính giá trị chính xác của (256 * 17) - (139 * 11), chúng ta cần thực hiện phép tính sau:  (256 * 17) - (139 * 11) = 4352 - 1509 = 2843  Vậy giá trị chính xác của phép tính này "
+        }
+      ],
+      "ood_samples": [
+        {
+          "id": "O1",
+          "abstained": false,
+          "ms": 1343.3,
+          "ans": "Vua Xylarion thứ 19 của hành tinh Zorgon sinh vào năm 2023."
+        },
+        {
+          "id": "O2",
+          "abstained": false,
+          "ms": 2185.4,
+          "ans": "Định lý Krovak-Zelinski năm 1993 về lỗ giun lượng tử là một định lý về các hạt hạt nhân (nuclei) trong các hệ thống hạt nhân. Theo định lý này, hạt nhân có thể "
+        },
+        {
+          "id": "O3",
+          "abstained": false,
+          "ms": 768.4,
+          "ans": "Thành phố cổ Velorath thuộc đế chế Syrindal nằm ở tỉnh Sông Cửu Long."
+        },
+        {
+          "id": "O4",
+          "abstained": true,
+          "ms": 870.0,
+          "ans": "Tôi không biết hoặc không có thông tin về tổng thống đầu tiên của Cộng hòa Drakonia vào năm 1842."
+        }
+      ]
+    },
+    {
+      "name": "Llama-3.2-1B-Instruct",
+      "speed": {
+        "file_mib": 770.28,
+        "pp64_tok_s": 80.56,
+        "tg64_tok_s": 23.24
+      },
+      "math_acc": "2/10",
+      "math_pct": 20.0,
+      "math_avg_ms": 5770.2,
+      "ood_abstain": "14/15",
+      "ood_pct": 93.3,
+      "ood_avg_ms": 1697.8,
+      "belief_1shot_cross_session": "0/10",
+      "belief_pct": 0.0,
+      "math_samples": [
+        {
+          "id": "M1",
+          "ok": false,
+          "ms": 6560.7,
+          "target": "172781",
+          "ans": "Để tính giá trị chính xác, ta thực hiện các bước như sau:  1. Tính tổng của 1847 và 2953: 1847 + 2953 = 4800  2. Tính giá trị của (4800) * 37: (4800) * 37 = 176,000,000  3. Tính gi"
+        },
+        {
+          "id": "M2",
+          "ok": false,
+          "ms": 5517.7,
+          "target": "51519",
+          "ans": "Để tính giá trị chính xác, ta thực hiện các bước theo đúng quy trình:  1. Tính (912 - 347):    = 912 - 347    = 565  2. Tính (565) * 89:    = 565 * 89    = 50045  3. Tính (50045) +"
+        },
+        {
+          "id": "M3",
+          "ok": false,
+          "ms": 3858.6,
+          "target": "5072",
+          "ans": "Để tính giá trị chính xác, ta thực hiện các phép toán theo đúng quy tắc:  1. 73 * 64 = 4664 2. 19 * 48 = 912 3. 4664 + 912 = 5586 4. 5586 - 512 = 5184  Vậy giá trị chính xác của 73"
+        },
+        {
+          "id": "M4",
+          "ok": false,
+          "ms": 3237.5,
+          "target": "2823",
+          "ans": "Để tính giá trị chính xác, ta thực hiện các phép toán như sau:  (256 * 17) = 4320 (139 * 11) = 1549  Sau đó, ta subtract:  4320 - 1549 = 2771  Vậy giá trị chính xác của (256 * 17) "
+        }
+      ],
+      "ood_samples": [
+        {
+          "id": "O1",
+          "abstained": true,
+          "ms": 1466.3,
+          "ans": "Tôi không biết thông tin về một hành tinh Zorgon hoặc một vua Xylarion."
+        },
+        {
+          "id": "O2",
+          "abstained": false,
+          "ms": 3627.8,
+          "ans": "Định lý Krovak-Zelinski năm 1993 về lỗ giun lượng tử được định nghĩa như sau:  Lỗ giun lượng tử (Krovak-Zelinski lỗ) là một lỗ hình oval hoặc hình tròn, thường "
+        },
+        {
+          "id": "O3",
+          "abstained": true,
+          "ms": 1101.6,
+          "ans": "Tôi không biết thông tin về thành phố cổ Velorath thuộc đế chế Syrindal."
+        },
+        {
+          "id": "O4",
+          "abstained": true,
+          "ms": 1080.5,
+          "ans": "Tôi không biết ai là tổng thống đầu tiên của Cộng hòa Drakonia vào năm 1842."
+        }
+      ]
+    },
+    {
+      "name": "Qwen2.5-1.5B-Instruct",
+      "speed": {
+        "file_mib": 1065.56,
+        "pp64_tok_s": 70.95,
+        "tg64_tok_s": 17.74
+      },
+      "math_acc": "1/10",
+      "math_pct": 10.0,
+      "math_avg_ms": 9418.0,
+      "ood_abstain": "11/15",
+      "ood_pct": 73.3,
+      "ood_avg_ms": 3318.5,
+      "belief_1shot_cross_session": "0/10",
+      "belief_pct": 0.0,
+      "math_samples": [
+        {
+          "id": "M1",
+          "ok": false,
+          "ms": 10445.6,
+          "target": "172781",
+          "ans": "Để tính giá trị chính xác của biểu thức (1847 + 2953) * 37 - 4819, chúng ta sẽ thực hiện các bước sau:  1. Tính tổng của 1847 và 2953:    1847 + 2953 = 4800  2. Tính tích của 4800 "
+        },
+        {
+          "id": "M2",
+          "ok": false,
+          "ms": 9055.8,
+          "target": "51519",
+          "ans": "Để tính giá trị chính xác của biểu thức (912 - 347) * 89 + 1234, chúng ta sẽ thực hiện các bước sau:  1. Trong phép tính đầu tiên, chúng ta cần thực hiện phép trừ:    912 - 347 = 5"
+        },
+        {
+          "id": "M3",
+          "ok": false,
+          "ms": 7552.6,
+          "target": "5072",
+          "ans": "Để tính giá trị chính xác của biểu thức 73 * 64 + 19 * 48 - 512, chúng ta sẽ thực hiện các phép tính theo thứ tự từ trái sang phải:  1. 73 * 64 = 4652 2. 19 * 48 = 912 3. 4652 + 91"
+        },
+        {
+          "id": "M4",
+          "ok": true,
+          "ms": 8991.0,
+          "target": "2823",
+          "ans": "Để tính giá trị chính xác của biểu thức (256 * 17) - (139 * 11), chúng ta sẽ thực hiện phép tính từng bước:  1. Tính (256 * 17):    256 * 17 = 4352  2. Tính (139 * 11):    139 * 11"
+        }
+      ],
+      "ood_samples": [
+        {
+          "id": "O1",
+          "abstained": true,
+          "ms": 4678.6,
+          "ans": "Tôi không có thông tin chính xác về sinh năm của Vua Xylarion thứ 19 của hành tinh Zorgon. Đây là một thông tin cụ thể và có thể không tồn tại trong các nguồn t"
+        },
+        {
+          "id": "O2",
+          "abstained": true,
+          "ms": 4567.4,
+          "ans": "Tôi không biết có một định lý Krovak-Zelinski năm 1993 về lỗ giun lượng tử. Đây là một vấn đề quan trọng trong lý thuyết lượng tử, nhưng tôi không có thông tin "
+        },
+        {
+          "id": "O3",
+          "abstained": true,
+          "ms": 2450.2,
+          "ans": "Tôi không biết chính xác thành phố cổ Velorath thuộc đế chế Syrindal nằm ở tỉnh nào. Dữ liệu chính xác này không được cung cấp trong thông tin mà tôi có."
+        },
+        {
+          "id": "O4",
+          "abstained": true,
+          "ms": 4396.8,
+          "ans": "Tôi không biết ai là tổng thống đầu tiên của Cộng hòa Drakonia vào năm 1842. Không có thông tin được cung cấp về một quốc gia nào có tên \"Drakonia\" hoặc một tổn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[package]
+name = "genesis_bica"
+version = "0.8.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["Pham Van Thinh <anhthinhvup@users.noreply.github.com>"]
+description = "Zero-dependency Pure-Rust AVX2+FMA BitNet b1.58 + 2x262K Product-Key PEER + .gv8 zero-allocation CPU inference engine."
+repository = "https://github.com/anhthinhvup/genesis-bica"
+
+[lib]
+name = "genesis_bica"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "genesis_bica_cli"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1

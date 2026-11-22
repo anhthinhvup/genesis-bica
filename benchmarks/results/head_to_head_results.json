@@ -1,0 +1,860 @@
+{
+  "seed": 42,
+  "results": [
+    {
+      "engine": "Project-Genesis-CPU-AVX2",
+      "neural_params": "0 (Non-Neural CPU + Rust AVX2)",
+      "peak_rss_mb": 902.9,
+      "part_a_home_turf": {
+        "pass_at_1": 31,
+        "pass_at_3": 31,
+        "total": 40,
+        "pct_at_1": 77.5,
+        "pct_at_3": 77.5,
+        "median_latency_ms": 2654.94,
+        "mean_latency_ms": 3554.03,
+        "by_front": {
+          "1_Elem_Multivar_Code": {
+            "pass_at_1": 5,
+            "pass_at_3": 5,
+            "total": 6,
+            "pct_at_1": 83.33,
+            "pct_at_3": 83.33
+          },
+          "2_Algo_StdLib_Synth": {
+            "pass_at_1": 5,
+            "pass_at_3": 5,
+            "total": 6,
+            "pct_at_1": 83.33,
+            "pct_at_3": 83.33
+          },
+          "3_Cursor_MultiFile_Repair": {
+            "pass_at_1": 4,
+            "pass_at_3": 4,
+            "total": 4,
+            "pct_at_1": 100.0,
+            "pct_at_3": 100.0
+          },
+          "4_Terminal_File_Auto": {
+            "pass_at_1": 4,
+            "pass_at_3": 4,
+            "total": 4,
+            "pct_at_1": 100.0,
+            "pct_at_3": 100.0
+          },
+          "5_Exact_Symbolic_Math": {
+            "pass_at_1": 6,
+            "pass_at_3": 6,
+            "total": 6,
+            "pct_at_1": 100.0,
+            "pct_at_3": 100.0
+          },
+          "6_Live_1Shot_Continual": {
+            "pass_at_1": 2,
+            "pass_at_3": 2,
+            "total": 4,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "7_Epistemic_Honesty": {
+            "pass_at_1": 4,
+            "pass_at_3": 4,
+            "total": 4,
+            "pct_at_1": 100.0,
+            "pct_at_3": 100.0
+          },
+          "8_Vi_Poetry_And_Prose": {
+            "pass_at_1": 1,
+            "pass_at_3": 1,
+            "total": 6,
+            "pct_at_1": 16.67,
+            "pct_at_3": 16.67
+          }
+        }
+      },
+      "part_b_public_120": {
+        "pass_at_1": 23,
+        "pass_at_3": 23,
+        "total": 120,
+        "pct_at_1": 19.17,
+        "pct_at_3": 19.17,
+        "median_latency_ms": 468.66,
+        "mean_latency_ms": 1270.9,
+        "by_suite": {
+          "B1_MBPP_40": {
+            "pass_at_1": 6,
+            "pass_at_3": 6,
+            "total": 40,
+            "pct_at_1": 15.0,
+            "pct_at_3": 15.0
+          },
+          "B2_GSM8K_40": {
+            "pass_at_1": 0,
+            "pass_at_3": 0,
+            "total": 40,
+            "pct_at_1": 0.0,
+            "pct_at_3": 0.0
+          },
+          "B3_TruthfulQA_ViQA_40": {
+            "pass_at_1": 17,
+            "pass_at_3": 17,
+            "total": 40,
+            "pct_at_1": 42.5,
+            "pct_at_3": 42.5
+          }
+        },
+        "b3_subbreakdown": {
+          "truthfulqa_mc": {
+            "passed": 16,
+            "total": 20,
+            "pct": 80.0
+          },
+          "viquad_ans": {
+            "passed": 1,
+            "total": 12,
+            "pct": 8.33
+          },
+          "viquad_imp": {
+            "passed": 0,
+            "total": 8,
+            "pct": 0.0
+          }
+        },
+        "passed_ids": [
+          "MBPP_88",
+          "MBPP_477",
+          "MBPP_71",
+          "MBPP_285",
+          "MBPP_426",
+          "MBPP_93",
+          "TQA_654",
+          "TQA_114",
+          "TQA_281",
+          "TQA_228",
+          "TQA_142",
+          "TQA_754",
+          "TQA_104",
+          "TQA_692",
+          "TQA_758",
+          "TQA_558",
+          "TQA_89",
+          "TQA_604",
+          "TQA_432",
+          "TQA_32",
+          "TQA_30",
+          "TQA_223",
+          "VIQUAD_ANS_2590"
+        ]
+      }
+    },
+    {
+      "engine": "Qwen2.5-0.5B-Instruct-Q4_K_M",
+      "gguf_mb": 468.6,
+      "peak_rss_mb": 576.0,
+      "part_a_home_turf": {
+        "pass_at_1": 20,
+        "pass_at_3": 20,
+        "total": 40,
+        "pct_at_1": 50.0,
+        "pct_at_3": 50.0,
+        "median_latency_ms": 44049.5,
+        "mean_latency_ms": 76737.72,
+        "by_front": {
+          "1_Elem_Multivar_Code": {
+            "pass_at_1": 5,
+            "pass_at_3": 5,
+            "total": 6,
+            "pct_at_1": 83.33,
+            "pct_at_3": 83.33
+          },
+          "2_Algo_StdLib_Synth": {
+            "pass_at_1": 3,
+            "pass_at_3": 3,
+            "total": 6,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "3_Cursor_MultiFile_Repair": {
+            "pass_at_1": 2,
+            "pass_at_3": 2,
+            "total": 4,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "4_Terminal_File_Auto": {
+            "pass_at_1": 0,
+            "pass_at_3": 0,
+            "total": 4,
+            "pct_at_1": 0.0,
+            "pct_at_3": 0.0
+          },
+          "5_Exact_Symbolic_Math": {
+            "pass_at_1": 3,
+            "pass_at_3": 3,
+            "total": 6,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "6_Live_1Shot_Continual": {
+            "pass_at_1": 2,
+            "pass_at_3": 2,
+            "total": 4,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "7_Epistemic_Honesty": {
+            "pass_at_1": 4,
+            "pass_at_3": 4,
+            "total": 4,
+            "pct_at_1": 100.0,
+            "pct_at_3": 100.0
+          },
+          "8_Vi_Poetry_And_Prose": {
+            "pass_at_1": 1,
+            "pass_at_3": 1,
+            "total": 6,
+            "pct_at_1": 16.67,
+            "pct_at_3": 16.67
+          }
+        }
+      },
+      "part_b_public_120": {
+        "pass_at_1": 45,
+        "pass_at_3": 45,
+        "total": 120,
+        "pct_at_1": 37.5,
+        "pct_at_3": 37.5,
+        "median_latency_ms": 15258.26,
+        "mean_latency_ms": 21599.06,
+        "by_suite": {
+          "B1_MBPP_40": {
+            "pass_at_1": 20,
+            "pass_at_3": 20,
+            "total": 40,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "B2_GSM8K_40": {
+            "pass_at_1": 12,
+            "pass_at_3": 12,
+            "total": 40,
+            "pct_at_1": 30.0,
+            "pct_at_3": 30.0
+          },
+          "B3_TruthfulQA_ViQA_40": {
+            "pass_at_1": 13,
+            "pass_at_3": 13,
+            "total": 40,
+            "pct_at_1": 32.5,
+            "pct_at_3": 32.5
+          }
+        },
+        "b3_subbreakdown": {
+          "truthfulqa_mc": {
+            "passed": 6,
+            "total": 20,
+            "pct": 30.0
+          },
+          "viquad_ans": {
+            "passed": 4,
+            "total": 12,
+            "pct": 33.33
+          },
+          "viquad_imp": {
+            "passed": 3,
+            "total": 8,
+            "pct": 37.5
+          }
+        },
+        "passed_ids": [
+          "MBPP_113",
+          "MBPP_406",
+          "MBPP_479",
+          "MBPP_88",
+          "MBPP_405",
+          "MBPP_77",
+          "MBPP_388",
+          "MBPP_72",
+          "MBPP_116",
+          "MBPP_262",
+          "MBPP_19",
+          "MBPP_394",
+          "MBPP_464",
+          "MBPP_111",
+          "MBPP_285",
+          "MBPP_426",
+          "MBPP_12",
+          "MBPP_411",
+          "MBPP_425",
+          "MBPP_93",
+          "GSM8K_228",
+          "GSM8K_457",
+          "GSM8K_285",
+          "GSM8K_1116",
+          "GSM8K_191",
+          "GSM8K_476",
+          "GSM8K_1034",
+          "GSM8K_1232",
+          "GSM8K_451",
+          "GSM8K_1206",
+          "GSM8K_865",
+          "GSM8K_318",
+          "TQA_759",
+          "TQA_142",
+          "TQA_754",
+          "TQA_692",
+          "TQA_32",
+          "TQA_95",
+          "VIQUAD_ANS_2918",
+          "VIQUAD_ANS_991",
+          "VIQUAD_ANS_766",
+          "VIQUAD_ANS_2717",
+          "VIQUAD_IMP_101",
+          "VIQUAD_IMP_90",
+          "VIQUAD_IMP_865"
+        ]
+      }
+    },
+    {
+      "engine": "Llama-3.2-1B-Instruct-Q4_K_M",
+      "gguf_mb": 770.3,
+      "peak_rss_mb": 1416.5,
+      "part_a_home_turf": {
+        "pass_at_1": 22,
+        "pass_at_3": 22,
+        "total": 40,
+        "pct_at_1": 55.0,
+        "pct_at_3": 55.0,
+        "median_latency_ms": 29019.43,
+        "mean_latency_ms": 36202.98,
+        "by_front": {
+          "1_Elem_Multivar_Code": {
+            "pass_at_1": 6,
+            "pass_at_3": 6,
+            "total": 6,
+            "pct_at_1": 100.0,
+            "pct_at_3": 100.0
+          },
+          "2_Algo_StdLib_Synth": {
+            "pass_at_1": 4,
+            "pass_at_3": 4,
+            "total": 6,
+            "pct_at_1": 66.67,
+            "pct_at_3": 66.67
+          },
+          "3_Cursor_MultiFile_Repair": {
+            "pass_at_1": 2,
+            "pass_at_3": 2,
+            "total": 4,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "4_Terminal_File_Auto": {
+            "pass_at_1": 0,
+            "pass_at_3": 0,
+            "total": 4,
+            "pct_at_1": 0.0,
+            "pct_at_3": 0.0
+          },
+          "5_Exact_Symbolic_Math": {
+            "pass_at_1": 3,
+            "pass_at_3": 3,
+            "total": 6,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "6_Live_1Shot_Continual": {
+            "pass_at_1": 3,
+            "pass_at_3": 3,
+            "total": 4,
+            "pct_at_1": 75.0,
+            "pct_at_3": 75.0
+          },
+          "7_Epistemic_Honesty": {
+            "pass_at_1": 3,
+            "pass_at_3": 3,
+            "total": 4,
+            "pct_at_1": 75.0,
+            "pct_at_3": 75.0
+          },
+          "8_Vi_Poetry_And_Prose": {
+            "pass_at_1": 1,
+            "pass_at_3": 1,
+            "total": 6,
+            "pct_at_1": 16.67,
+            "pct_at_3": 16.67
+          }
+        }
+      },
+      "part_b_public_120": {
+        "pass_at_1": 46,
+        "pass_at_3": 48,
+        "total": 120,
+        "pct_at_1": 38.33,
+        "pct_at_3": 40.0,
+        "median_latency_ms": 13879.85,
+        "mean_latency_ms": 22891.36,
+        "by_suite": {
+          "B1_MBPP_40": {
+            "pass_at_1": 15,
+            "pass_at_3": 17,
+            "total": 40,
+            "pct_at_1": 37.5,
+            "pct_at_3": 42.5
+          },
+          "B2_GSM8K_40": {
+            "pass_at_1": 17,
+            "pass_at_3": 17,
+            "total": 40,
+            "pct_at_1": 42.5,
+            "pct_at_3": 42.5
+          },
+          "B3_TruthfulQA_ViQA_40": {
+            "pass_at_1": 14,
+            "pass_at_3": 14,
+            "total": 40,
+            "pct_at_1": 35.0,
+            "pct_at_3": 35.0
+          }
+        },
+        "b3_subbreakdown": {
+          "truthfulqa_mc": {
+            "passed": 7,
+            "total": 20,
+            "pct": 35.0
+          },
+          "viquad_ans": {
+            "passed": 0,
+            "total": 12,
+            "pct": 0.0
+          },
+          "viquad_imp": {
+            "passed": 7,
+            "total": 8,
+            "pct": 87.5
+          }
+        },
+        "passed_ids": [
+          "MBPP_61",
+          "MBPP_406",
+          "MBPP_479",
+          "MBPP_88",
+          "MBPP_405",
+          "MBPP_77",
+          "MBPP_388",
+          "MBPP_477",
+          "MBPP_447",
+          "MBPP_20",
+          "MBPP_262",
+          "MBPP_394",
+          "MBPP_464",
+          "MBPP_130",
+          "MBPP_426",
+          "MBPP_425",
+          "MBPP_93",
+          "GSM8K_501",
+          "GSM8K_457",
+          "GSM8K_285",
+          "GSM8K_1116",
+          "GSM8K_178",
+          "GSM8K_476",
+          "GSM8K_1034",
+          "GSM8K_54",
+          "GSM8K_1149",
+          "GSM8K_859",
+          "GSM8K_569",
+          "GSM8K_865",
+          "GSM8K_318",
+          "GSM8K_440",
+          "GSM8K_778",
+          "GSM8K_735",
+          "GSM8K_704",
+          "TQA_654",
+          "TQA_250",
+          "TQA_142",
+          "TQA_754",
+          "TQA_432",
+          "TQA_32",
+          "TQA_223",
+          "VIQUAD_IMP_2370",
+          "VIQUAD_IMP_291",
+          "VIQUAD_IMP_2513",
+          "VIQUAD_IMP_1756",
+          "VIQUAD_IMP_101",
+          "VIQUAD_IMP_90",
+          "VIQUAD_IMP_865"
+        ]
+      }
+    },
+    {
+      "engine": "Qwen2.5-1.5B-Instruct-Q4_K_M",
+      "gguf_mb": 1065.6,
+      "peak_rss_mb": 1885.5,
+      "part_a_home_turf": {
+        "pass_at_1": 23,
+        "pass_at_3": 23,
+        "total": 40,
+        "pct_at_1": 57.5,
+        "pct_at_3": 57.5,
+        "median_latency_ms": 21998.87,
+        "mean_latency_ms": 26723.97,
+        "by_front": {
+          "1_Elem_Multivar_Code": {
+            "pass_at_1": 3,
+            "pass_at_3": 3,
+            "total": 6,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "2_Algo_StdLib_Synth": {
+            "pass_at_1": 4,
+            "pass_at_3": 4,
+            "total": 6,
+            "pct_at_1": 66.67,
+            "pct_at_3": 66.67
+          },
+          "3_Cursor_MultiFile_Repair": {
+            "pass_at_1": 3,
+            "pass_at_3": 3,
+            "total": 4,
+            "pct_at_1": 75.0,
+            "pct_at_3": 75.0
+          },
+          "4_Terminal_File_Auto": {
+            "pass_at_1": 1,
+            "pass_at_3": 1,
+            "total": 4,
+            "pct_at_1": 25.0,
+            "pct_at_3": 25.0
+          },
+          "5_Exact_Symbolic_Math": {
+            "pass_at_1": 4,
+            "pass_at_3": 4,
+            "total": 6,
+            "pct_at_1": 66.67,
+            "pct_at_3": 66.67
+          },
+          "6_Live_1Shot_Continual": {
+            "pass_at_1": 2,
+            "pass_at_3": 2,
+            "total": 4,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "7_Epistemic_Honesty": {
+            "pass_at_1": 4,
+            "pass_at_3": 4,
+            "total": 4,
+            "pct_at_1": 100.0,
+            "pct_at_3": 100.0
+          },
+          "8_Vi_Poetry_And_Prose": {
+            "pass_at_1": 2,
+            "pass_at_3": 2,
+            "total": 6,
+            "pct_at_1": 33.33,
+            "pct_at_3": 33.33
+          }
+        }
+      },
+      "part_b_public_120": {
+        "pass_at_1": 62,
+        "pass_at_3": 62,
+        "total": 120,
+        "pct_at_1": 51.67,
+        "pct_at_3": 51.67,
+        "median_latency_ms": 10870.04,
+        "mean_latency_ms": 19258.82,
+        "by_suite": {
+          "B1_MBPP_40": {
+            "pass_at_1": 22,
+            "pass_at_3": 22,
+            "total": 40,
+            "pct_at_1": 55.0,
+            "pct_at_3": 55.0
+          },
+          "B2_GSM8K_40": {
+            "pass_at_1": 23,
+            "pass_at_3": 23,
+            "total": 40,
+            "pct_at_1": 57.5,
+            "pct_at_3": 57.5
+          },
+          "B3_TruthfulQA_ViQA_40": {
+            "pass_at_1": 17,
+            "pass_at_3": 17,
+            "total": 40,
+            "pct_at_1": 42.5,
+            "pct_at_3": 42.5
+          }
+        },
+        "b3_subbreakdown": {
+          "truthfulqa_mc": {
+            "passed": 8,
+            "total": 20,
+            "pct": 40.0
+          },
+          "viquad_ans": {
+            "passed": 1,
+            "total": 12,
+            "pct": 8.33
+          },
+          "viquad_imp": {
+            "passed": 8,
+            "total": 8,
+            "pct": 100.0
+          }
+        },
+        "passed_ids": [
+          "MBPP_113",
+          "MBPP_406",
+          "MBPP_479",
+          "MBPP_88",
+          "MBPP_405",
+          "MBPP_77",
+          "MBPP_388",
+          "MBPP_477",
+          "MBPP_447",
+          "MBPP_273",
+          "MBPP_71",
+          "MBPP_56",
+          "MBPP_116",
+          "MBPP_262",
+          "MBPP_19",
+          "MBPP_394",
+          "MBPP_464",
+          "MBPP_130",
+          "MBPP_426",
+          "MBPP_12",
+          "MBPP_425",
+          "MBPP_93",
+          "GSM8K_563",
+          "GSM8K_457",
+          "GSM8K_1116",
+          "GSM8K_178",
+          "GSM8K_61",
+          "GSM8K_191",
+          "GSM8K_447",
+          "GSM8K_476",
+          "GSM8K_1034",
+          "GSM8K_1232",
+          "GSM8K_1149",
+          "GSM8K_407",
+          "GSM8K_859",
+          "GSM8K_1206",
+          "GSM8K_326",
+          "GSM8K_865",
+          "GSM8K_696",
+          "GSM8K_440",
+          "GSM8K_189",
+          "GSM8K_778",
+          "GSM8K_735",
+          "GSM8K_704",
+          "GSM8K_1236",
+          "TQA_759",
+          "TQA_142",
+          "TQA_754",
+          "TQA_104",
+          "TQA_89",
+          "TQA_432",
+          "TQA_95",
+          "TQA_223",
+          "VIQUAD_ANS_2918",
+          "VIQUAD_IMP_2370",
+          "VIQUAD_IMP_291",
+          "VIQUAD_IMP_2513",
+          "VIQUAD_IMP_1756",
+          "VIQUAD_IMP_101",
+          "VIQUAD_IMP_90",
+          "VIQUAD_IMP_323",
+          "VIQUAD_IMP_865"
+        ]
+      }
+    },
+    {
+      "engine": "Qwen2.5-Coder-1.5B-Instruct-Q4_K_M",
+      "gguf_mb": 1065.6,
+      "peak_rss_mb": 2145.2,
+      "part_a_home_turf": {
+        "pass_at_1": 22,
+        "pass_at_3": 23,
+        "total": 40,
+        "pct_at_1": 55.0,
+        "pct_at_3": 57.5,
+        "median_latency_ms": 8761.28,
+        "mean_latency_ms": 17927.68,
+        "by_front": {
+          "1_Elem_Multivar_Code": {
+            "pass_at_1": 6,
+            "pass_at_3": 6,
+            "total": 6,
+            "pct_at_1": 100.0,
+            "pct_at_3": 100.0
+          },
+          "2_Algo_StdLib_Synth": {
+            "pass_at_1": 5,
+            "pass_at_3": 5,
+            "total": 6,
+            "pct_at_1": 83.33,
+            "pct_at_3": 83.33
+          },
+          "3_Cursor_MultiFile_Repair": {
+            "pass_at_1": 3,
+            "pass_at_3": 3,
+            "total": 4,
+            "pct_at_1": 75.0,
+            "pct_at_3": 75.0
+          },
+          "4_Terminal_File_Auto": {
+            "pass_at_1": 0,
+            "pass_at_3": 1,
+            "total": 4,
+            "pct_at_1": 0.0,
+            "pct_at_3": 25.0
+          },
+          "5_Exact_Symbolic_Math": {
+            "pass_at_1": 3,
+            "pass_at_3": 3,
+            "total": 6,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "6_Live_1Shot_Continual": {
+            "pass_at_1": 2,
+            "pass_at_3": 2,
+            "total": 4,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "7_Epistemic_Honesty": {
+            "pass_at_1": 2,
+            "pass_at_3": 2,
+            "total": 4,
+            "pct_at_1": 50.0,
+            "pct_at_3": 50.0
+          },
+          "8_Vi_Poetry_And_Prose": {
+            "pass_at_1": 1,
+            "pass_at_3": 1,
+            "total": 6,
+            "pct_at_1": 16.67,
+            "pct_at_3": 16.67
+          }
+        }
+      },
+      "part_b_public_120": {
+        "pass_at_1": 62,
+        "pass_at_3": 62,
+        "total": 120,
+        "pct_at_1": 51.67,
+        "pct_at_3": 51.67,
+        "median_latency_ms": 15817.07,
+        "mean_latency_ms": 20305.82,
+        "by_suite": {
+          "B1_MBPP_40": {
+            "pass_at_1": 24,
+            "pass_at_3": 24,
+            "total": 40,
+            "pct_at_1": 60.0,
+            "pct_at_3": 60.0
+          },
+          "B2_GSM8K_40": {
+            "pass_at_1": 19,
+            "pass_at_3": 19,
+            "total": 40,
+            "pct_at_1": 47.5,
+            "pct_at_3": 47.5
+          },
+          "B3_TruthfulQA_ViQA_40": {
+            "pass_at_1": 19,
+            "pass_at_3": 19,
+            "total": 40,
+            "pct_at_1": 47.5,
+            "pct_at_3": 47.5
+          }
+        },
+        "b3_subbreakdown": {
+          "truthfulqa_mc": {
+            "passed": 8,
+            "total": 20,
+            "pct": 40.0
+          },
+          "viquad_ans": {
+            "passed": 9,
+            "total": 12,
+            "pct": 75.0
+          },
+          "viquad_imp": {
+            "passed": 2,
+            "total": 8,
+            "pct": 25.0
+          }
+        },
+        "passed_ids": [
+          "MBPP_113",
+          "MBPP_61",
+          "MBPP_406",
+          "MBPP_129",
+          "MBPP_479",
+          "MBPP_88",
+          "MBPP_405",
+          "MBPP_77",
+          "MBPP_477",
+          "MBPP_447",
+          "MBPP_273",
+          "MBPP_71",
+          "MBPP_56",
+          "MBPP_116",
+          "MBPP_262",
+          "MBPP_291",
+          "MBPP_19",
+          "MBPP_394",
+          "MBPP_130",
+          "MBPP_426",
+          "MBPP_12",
+          "MBPP_411",
+          "MBPP_425",
+          "MBPP_93",
+          "GSM8K_1309",
+          "GSM8K_563",
+          "GSM8K_457",
+          "GSM8K_285",
+          "GSM8K_1116",
+          "GSM8K_65",
+          "GSM8K_61",
+          "GSM8K_447",
+          "GSM8K_476",
+          "GSM8K_1034",
+          "GSM8K_1232",
+          "GSM8K_1149",
+          "GSM8K_451",
+          "GSM8K_1206",
+          "GSM8K_569",
+          "GSM8K_318",
+          "GSM8K_735",
+          "GSM8K_704",
+          "GSM8K_1236",
+          "TQA_25",
+          "TQA_142",
+          "TQA_104",
+          "TQA_89",
+          "TQA_604",
+          "TQA_432",
+          "TQA_95",
+          "TQA_223",
+          "VIQUAD_ANS_2590",
+          "VIQUAD_ANS_394",
+          "VIQUAD_ANS_2918",
+          "VIQUAD_ANS_991",
+          "VIQUAD_ANS_875",
+          "VIQUAD_ANS_766",
+          "VIQUAD_ANS_2904",
+          "VIQUAD_ANS_2717",
+          "VIQUAD_ANS_2914",
+          "VIQUAD_IMP_2370",
+          "VIQUAD_IMP_291"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "gsm8k": {
+    "repo": "openai/gsm8k",
+    "config": "main",
+    "split": "test",
+    "count": 1319,
+    "sha256": "ca6e7c5108b7ab7bc920c707e021b21bd9bdaf725e48a179b781ce4be1e9ad13"
+  },
+  "arc_challenge": {
+    "repo": "allenai/ai2_arc",
+    "config": "ARC-Challenge",
+    "split": "test",
+    "count": 1172,
+    "sha256": "b90e27562e002b9874dc38efc1d0a561e66266f6347ac82f4599e75dd4b604af"
+  },
+  "humaneval": {
+    "repo": "openai/openai_humaneval",
+    "config": null,
+    "split": "test",
+    "count": 164,
+    "sha256": "9329d3a61b18b3263af9ef771996844e95b1fd7138d2f704f48ce384031029f4"
+  },
+  "mbpp": {
+    "repo": "google-research-datasets/mbpp",
+    "config": "sanitized",
+    "split": "test",
+    "count": 257,
+    "sha256": "7f47e0d8a7e5011d6ec698a86c66c80d3968f4211d10a91d8305eed54e1e4972"
+  },
+  "mmlu_pro": {
+    "repo": "TIGER-Lab/MMLU-Pro",
+    "config": null,
+    "split": "test",
+    "count": 12032,
+    "sha256": "51d7b60cb50f027a564d57df2e8db671af7f084c34481cfb37285b6d3eb0c1b1"
+  },
+  "folio": {
+    "repo": "yale-nlp/FOLIO",
+    "config": null,
+    "split": "validation",
+    "error": "Dataset 'yale-nlp/FOLIO' is a gated dataset on the Hub. You must be authenticated to access it."
+  },
+  "math500": {
+    "repo": "HuggingFaceH4/MATH-500",
+    "config": null,
+    "split": "test",
+    "count": 500,
+    "sha256": "55e02317c57e6c22edc3acf444702e0653acbef8a8f49bfc58b77d6bfefc5693"
+  },
+  "swebench_lite": {
+    "repo": "princeton-nlp/SWE-bench_Lite",
+    "config": null,
+    "split": "test",
+    "count": 300,
+    "sha256": "286d118089d24528fb7fef3a60585002f351d9294fca1fe2db195d366f6c9e3f"
+  }
+}
