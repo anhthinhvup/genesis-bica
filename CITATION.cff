@@ -12,6 +12,14 @@ url: "https://github.com/anhthinhvup/genesis-bica"
 license: Apache-2.0
 version: "0.8.0"
 date-released: "2026-11-22"
+doi: "10.5281/zenodo.24447312"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24447312"
+    description: "Version v0.8.0 Zenodo archive (CERN)"
+  - type: doi
+    value: "10.5281/zenodo.24447311"
+    description: "Concept DOI representing all versions of Genesis-v8 Native BICA"
 keywords:
   - "brain-isomorphic-ai"
   - "bitnet-1.58"

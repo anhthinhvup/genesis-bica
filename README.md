@@ -4,6 +4,7 @@
 
 ### Brain-Isomorphic Ultra-Sparse 1.58-Bit Cognitive Architecture (`457M` Total / `14.5M` Active)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24447312.svg)](https://doi.org/10.5281/zenodo.24447312)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Rust Engine](https://img.shields.io/badge/Rust_AVX2-Zero_Crates_Zero_Alloc-orange.svg)](./engine_rust)
 [![Tests](https://img.shields.io/badge/Unit_Tests-Cargo_%2B_Pytest_Verified-brightgreen.svg)](./tests)
@@ -127,10 +128,13 @@ If you build upon **Genesis-v8 Native BICA**, please cite our repository ([`CITA
 
 ```bibtex
 @software{pham2026genesis_bica,
-  author  = {Pham, Van Thinh},
-  title   = {Genesis-v8 Native BICA: A Brain-Isomorphic Ultra-Sparse 1.58-Bit Cognitive Architecture},
-  year    = {2026},
-  url     = {https://github.com/anhthinhvup/genesis-bica},
-  license = {Apache-2.0}
+  author    = {Pham, Van Thinh},
+  title     = {Genesis-v8 Native BICA: A Brain-Isomorphic Ultra-Sparse 1.58-Bit Cognitive Architecture},
+  year      = {2026},
+  month     = nov,
+  publisher = {Zenodo},
+  version   = {v0.8.0},
+  doi       = {10.5281/zenodo.24447312},
+  url       = {https://doi.org/10.5281/zenodo.24447312}
 }
 ```
