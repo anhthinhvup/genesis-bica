@@ -1,0 +1,138 @@
+{
+  "datasets": {
+    "folio": {
+      "source": "tasksource/folio",
+      "n": 50,
+      "total": 203,
+      "sha256": "6b1df66ccc811fe7"
+    },
+    "humaneval": {
+      "source": "openai/openai_humaneval",
+      "n": 30,
+      "total": 164,
+      "sha256": "9329d3a61b18b326"
+    },
+    "math500": {
+      "source": "HuggingFaceH4/MATH-500",
+      "n": 30,
+      "total": 500,
+      "sha256": "55e02317c57e6c22"
+    }
+  },
+  "models": {
+    "Project-Genesis-Loop29-CPU": {
+      "folio": {
+        "n": 50,
+        "correct": 39,
+        "acc_pct": 78.0,
+        "tf_correct": 19,
+        "tf_total": 30,
+        "unc_correct": 20,
+        "unc_total": 20,
+        "unparsed": 0,
+        "median_ms": 50.32
+      },
+      "humaneval": {
+        "n": 30,
+        "pass_at_1": 19,
+        "acc_pct": 63.33,
+        "syntax_valid": 23,
+        "median_ms": 198.02
+      },
+      "math500": {
+        "n": 30,
+        "correct": 12,
+        "acc_pct": 40.0,
+        "boxed_found": 0,
+        "median_ms": 89.63
+      }
+    },
+    "Qwen2.5-0.5B-Instruct": {
+      "gguf_mb": 468.6,
+      "folio": {
+        "n": 50,
+        "correct": 20,
+        "acc_pct": 40.0,
+        "tf_correct": 0,
+        "tf_total": 30,
+        "unc_correct": 20,
+        "unc_total": 20,
+        "unparsed": 0,
+        "median_ms": 463.37
+      },
+      "humaneval": {
+        "n": 30,
+        "pass_at_1": 16,
+        "acc_pct": 53.33,
+        "syntax_valid": 27,
+        "median_ms": 7225.96
+      },
+      "math500": {
+        "n": 30,
+        "correct": 8,
+        "acc_pct": 26.67,
+        "boxed_found": 10,
+        "median_ms": 11917.48
+      },
+      "peak_rss_mb": 852.3
+    },
+    "Llama-3.2-1B-Instruct": {
+      "gguf_mb": 770.3,
+      "folio": {
+        "n": 50,
+        "correct": 18,
+        "acc_pct": 36.0,
+        "tf_correct": 18,
+        "tf_total": 30,
+        "unc_correct": 0,
+        "unc_total": 20,
+        "unparsed": 0,
+        "median_ms": 597.4
+      },
+      "humaneval": {
+        "n": 30,
+        "pass_at_1": 11,
+        "acc_pct": 36.67,
+        "syntax_valid": 22,
+        "median_ms": 12473.99
+      },
+      "math500": {
+        "n": 30,
+        "correct": 12,
+        "acc_pct": 40.0,
+        "boxed_found": 6,
+        "median_ms": 15715.43
+      },
+      "peak_rss_mb": 2192.4
+    },
+    "Qwen2.5-1.5B-Instruct": {
+      "gguf_mb": 1065.6,
+      "folio": {
+        "n": 50,
+        "correct": 21,
+        "acc_pct": 42.0,
+        "tf_correct": 17,
+        "tf_total": 30,
+        "unc_correct": 4,
+        "unc_total": 20,
+        "unparsed": 0,
+        "median_ms": 981.22
+      },
+      "humaneval": {
+        "n": 30,
+        "pass_at_1": 23,
+        "acc_pct": 76.67,
+        "syntax_valid": 27,
+        "median_ms": 15497.79
+      },
+      "math500": {
+        "n": 30,
+        "correct": 11,
+        "acc_pct": 36.67,
+        "boxed_found": 13,
+        "median_ms": 22742.25
+      },
+      "peak_rss_mb": 2405.4
+    }
+  }
+}

@@ -150,11 +150,12 @@ Source: `benchmarks/results/genesis_v8_bica_vs_multib_results.json` (`llama-benc
 
 Sources: `benchmarks/results/world_bench_loop29_final.json`, `benchmarks/results/head_to_head_results.json`, and live symmetric `bench_intl_head_to_head.py`:
 
-| Official Benchmark (SHA-256 Prefix) | **`Project Genesis` (CPU, `0%` GPU)** | Same-Machine `0.5B–1.5B` LLMs | Published Multi-B Reference | Median Latency |
+| Official Benchmark (SHA-256 Prefix) | **`Project Genesis` (CPU, `0%` GPU)** | Same-Machine `0.5B–1.5B` LLMs (`i5-10210U`) | Published Multi-B Reference | Median Latency |
 |---|---:|---|---|---:|
-| **`FOLIO`** (`tasksource/folio`, `6b1df66c`) | **`63.0%`** (`n=100`) / **`55.67%`** (`full 203`) / **`78.0%`** (`[:50]`) | `Qwen2.5-0.5B`: `40.0%` (`[:50]`, `0/30` T/F, `463 ms`) | `Llama-3-8B`: `~58%` | **`50–175 ms`** |
-| **`HumanEval`** (`openai_humaneval`, `9329d3a6`, `pass@1`) | **`39.0%–41.0%`** (`n=100`) / **`63.33%`** (`[:30]`) | `Qwen2.5-0.5B`: `53.33%` (`[:30]`, `7,226 ms`) | `Llama-3.2-3B`: `~36%` | **`198–495 ms`** |
-| **`MATH-500`** (`HuggingFaceH4/MATH-500`, `55e02317`) | **`41.0%`** (`n=100`) / **`40.0%`** (`[:30]`) | *(symmetric live benchmark updating)* | `Llama-3-8B`: `~30%` | **`84–108 ms`** |
+| **`FOLIO`** (`tasksource/folio`, `6b1df66c`, `unparsed=0`) | **`78.0%`** (`[:50]`) / **`63.0%`** (`n=100`) / **`55.67%`** (`full 203`) | `Qwen-1.5B: 42.0%` · `Qwen-0.5B: 40.0%` · `Llama-1B: 36.0%` | `Llama-3-8B`: `~58%` | **`50–175 ms`** |
+| **`HumanEval`** (`openai_humaneval`, `9329d3a6`, `pass@1`) | **`63.33%`** (`[:30]`) / **`39.0%–41.0%`** (`n=100`) | `Qwen-1.5B: 76.67% (15.5s)` · `Qwen-0.5B: 53.33%` · `Llama-1B: 36.67%` | `Llama-3.2-3B`: `~36%` | **`198–495 ms`** |
+| **`MATH-500`** (`HuggingFaceH4/MATH-500`, `55e02317`) | **`40.00%`** (`[:30]`) / **`41.0%`** (`n=100`) | `Llama-1B: 40.0% (15.7s)` · `Qwen-1.5B: 36.67% (22.7s)` · `Qwen-0.5B: 26.67%` | `Llama-3-8B`: `~30%` | **`84–90 ms`** |
+| **Live 3-Suite Total (`110` Official Items)** | **`70/110 (63.64%)`** *(Macro `60.44%`)* | `Qwen-1.5B: 50.0%` · `Qwen-0.5B: 40.0%` · `Llama-1B: 37.3%` | **`+13.64 pp` vs `1.5B`** | **`50–198 ms`** |
 | **`MBPP-sanitized`** (`google/mbpp`, `7f47e0d8`) | **`44.36%`** `pass@1` (`full 257`) / **`75.0%`** `pass@3` (`n=40`) | `0.5B: 50%` / `1B: 42.5%` / `1.5B: 55%` / `Coder-1.5B: 60%` | `Gemma-2-2B`: `~36.6%` | **`705 ms`** |
 | **`TruthfulQA-MC`** (`truthfulqa`, `23f08e23`, `seed=42`) | **`80.0%`** (`16/20`, v3) | `0.5B: 30%` / `1B: 35%` / `1.5B: 40%` | Outperforms `1.5B` by `+40 pp` | **`123 ms`** |
 | **`UIT-ViQuAD 2.0`** (`taidng`, `8c81bdd7`, `seed=42`) | **`80.0%`** (`100%` unanswerable detection) | `0.5B: 35%` / `1B: 35%` / `1.5B: 45%` | Outperforms `1.5B` by `+35 pp` | **`123 ms`** |
